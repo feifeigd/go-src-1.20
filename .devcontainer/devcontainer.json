@@ -29,14 +29,21 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {},
+			"settings": {
+				// for go
+				"go.toolsManagement.checkForUpdates": "local",
+				"go.useLangServer": true,
+				"go.gopath": "/go"
+			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"bazelbuild.vscode-bazel",
 				"mads-hartmann.bash-ide-vscode",
 				"ms-vscode.cpptools",
 				"ms-vscode.cpptools-extension-pack",
-				"ms-vscode.cmake-tools"
+				"ms-vscode.cmake-tools",
+				// for go
+				"golang.go"
 			]
 		}
 	},
